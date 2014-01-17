@@ -13,6 +13,9 @@ group :development do
   gem 'sqlite3'
 end
 
+# New Relic - Performance Monitoring
+gem 'newrelic_rpm'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
