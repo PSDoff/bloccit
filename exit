@@ -1,0 +1,29 @@
+commit e8caadc1cdd8a0077f49b5ed83e87343b089980c
+Author: vagrant <vagrant@rails-dev-box>
+Date:   Fri Jan 17 20:31:01 2014 +0000
+
+    New relic attempt... again
+
+commit 13a370bee6fb767632ac591da6b0567511b1f864
+Author: PSDoff <alex@psdoff.com>
+Date:   Fri Jan 17 13:14:14 2014 -0500
+
+    Forgot the New Relic config file
+
+commit 5e9b0dbdaa85422714c6d65b6039d4a995eda12d
+Author: PSDoff <alex@psdoff.com>
+Date:   Fri Jan 17 13:13:30 2014 -0500
+
+    Add New Relic performance monitoring
+
+commit 26aa3f0a157b688c33505ff60f8eb638492ea018
+Author: PSDoff <alex@psdoff.com>
+Date:   Fri Jan 17 12:11:28 2014 -0500
+
+    Create welcome controller with index and about views.
+
+commit 2b9321e8caa99b4e4f63254975b865ad8eb4a459
+Author: PSDoff <alex@psdoff.com>
+Date:   Fri Jan 17 10:13:17 2014 -0500
+
+    First commit and README update
