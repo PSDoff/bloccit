@@ -1,12 +1,11 @@
 <h1><%= @topic.name %></h1>
 
-<% if can? :update, @topic %>
-  <%= link_to "Edit Topic", edit_topic_path, class: 'btn btn-primary btn-mini' %>
-<% end %>
-
 <div class="row">
   <div class="span8">
     <p class="lead"><%= @topic.description %></p>
+    <% if can? :update, @topic %>
+      <%= link_to "Edit Topic", edit_topic_path, class: 'btn btn-primary btn-mini' %>
+    <% end %>
     <% @posts.each do |post| %>
       <div class="media">
         <div class="media-body">
