@@ -9,6 +9,7 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    authorize! :create, Post, message: "You need to be a member to create a new post."
   end
 
   # Adding a create method to the posts_controller.rb
