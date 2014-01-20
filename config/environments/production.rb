@@ -67,4 +67,6 @@ Bloccit::Application.configure do
 
   # http://bloccit.herokuapp.com
   config.action_mailer.default_url_options = { :host => 'psdoff-bloccit.herokuapp.com' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
 end
