@@ -1,3 +1,12 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+code{
+  border-left: 1px solid rgba(255,242,227,0.35) !important;
+  font-family: "Menlo","Ubuntu Mono","Droid Sans Mono","Consolas","monospace";
+  font-weight: 900;
+  font-style: normal;
+  font-size: 14px !important;
+  padding: 10px 0px 10px 5px !important;
+}
