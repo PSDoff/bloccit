@@ -37,7 +37,7 @@ rand(4..10).times do
 
    post_count = Post.count
     User.all.each do |user|
-      rand(30..50).times do
+      rand(1..15).times do
         p = Post.find(rand(1..post_count))
         c = user.comments.create(
           body: Faker::Lorem.paragraphs(rand(1..2)).join("\n"),
@@ -48,34 +48,36 @@ rand(4..10).times do
   end
 end
 
-u = User.new(
-  name: 'Admin User',
-  email: 'admin@example.com',
-  password: 'helloworld',
-  password_confirmation: 'helloworld')
-u.skip_confirmation!
-u.save
-u.update_attribute(:role, 'admin')
 
-u = User.new(
-  name: 'Moderator User',
-  email: 'moderator@example.com',
-  password: 'helloworld',
-  password_confirmation: 'helloworld')
-u.skip_confirmation!
-u.save
-u.update_attribute(:role, 'moderator')
+  u = User.new(
+    name: 'Admin User',
+    email: 'admin@example.com',
+    password: 'helloworld',
+    password_confirmation: 'helloworld')
+  u.skip_confirmation!
+  u.save
+  u.update_attribute(:role, 'admin')
 
-u = User.new(
-  name: 'Member User',
-  email: 'member@example.com',
-  password: 'helloworld',
-  password_confirmation: 'helloworld')
-u.skip_confirmation!
-u.save
+  u = User.new(
+    name: 'Moderator User',
+    email: 'moderator@example.com',
+    password: 'helloworld',
+    password_confirmation: 'helloworld')
+  u.skip_confirmation!
+  u.save
+  u.update_attribute(:role, 'moderator')
 
-puts "Seed finished"
-puts "#{User.count} users created"
-puts "#{Topic.count} topics created"
-puts "#{Post.count} posts created"
-puts "#{Comment.count} comments created"
+  u = User.new(
+    name: 'Member User',
+    email: 'member@example.com',
+    password: 'helloworld',
+    password_confirmation: 'helloworld')
+  u.skip_confirmation!
+  u.save
+
+  puts "Seed finished"
+  puts "#{User.count} users created"
+  puts "#{Topic.count} topics created"
+  puts "#{Post.count} posts created"
+  puts "#{Comment.count} comments created"
+
