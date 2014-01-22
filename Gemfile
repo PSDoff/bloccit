@@ -8,6 +8,7 @@ end
 
 group :development do
   gem 'sqlite3'
+  gem 'faker'
 end
 
 group :assets do
@@ -19,7 +20,6 @@ end
 
 gem 'newrelic_rpm'
 gem 'jquery-rails'
-gem 'faker'
 gem 'devise'
 gem 'simple_form'
 gem 'cancan'
