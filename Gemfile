@@ -8,7 +8,6 @@ end
 
 group :development do
   gem 'sqlite3'
-  gem 'faker'
 end
 
 group :assets do
@@ -24,6 +23,7 @@ gem 'devise'
 gem 'simple_form'
 gem 'cancan'
 gem 'redcarpet'
+gem 'faker'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
