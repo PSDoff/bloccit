@@ -13,6 +13,7 @@ Bloccit::Application.routes.draw do
   end
 
   match "about" => 'welcome#about', via: :get
+  match "topics" => 'topics', via: :get
 
   root to: 'welcome#index'
 end
