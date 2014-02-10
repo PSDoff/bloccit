@@ -9,6 +9,7 @@ Bloccit::Application.routes.draw do
 
       match '/up-vote', to: 'votes#up_vote', as: :up_vote
       match '/down-vote', to: 'votes#down_vote', as: :down_vote
+      resources :favorites, only: [:create, :destroy]
     end
   end
 
